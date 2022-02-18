@@ -17,8 +17,5 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/hello', function () {
-    return [
-        'name' => 'moin'
-    ];
-});
+Route::resource('books', BookController::class);
+// Route::post('/books', [BookController::class, 'store']);
