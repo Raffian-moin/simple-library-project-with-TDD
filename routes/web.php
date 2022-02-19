@@ -18,4 +18,5 @@ Route::get('/', function () {
 });
 
 Route::resource('books', BookController::class);
+Route::resource('authors', AuthorController::class);
 // Route::post('/books', [BookController::class, 'store']);
